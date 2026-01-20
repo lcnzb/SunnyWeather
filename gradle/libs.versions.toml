@@ -7,6 +7,11 @@ appcompat = "1.7.1"
 material = "1.13.0"
 activity = "1.12.2"
 constraintlayout = "2.2.1"
+# 功能依赖版本
+sqlite = "2.4.0"
+core = "1.12.0"
+datetime = "1.2.0"
+activity-ktx = "1.9.0"
 
 [libraries]
 junit = { group = "junit", name = "junit", version.ref = "junit" }
@@ -16,7 +21,11 @@ appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "a
 material = { group = "com.google.android.material", name = "material", version.ref = "material" }
 activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
 constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
-
+# 功能依赖（无androidx层级，直接用别名）
+sqlite = { group = "androidx.sqlite", name = "sqlite", version.ref = "sqlite" }
+core = { group = "androidx.core", name = "core", version.ref = "core" }
+datetime = { group = "androidx.datetime", name = "datetime", version.ref = "datetime" }
+activity-ktx = { group = "androidx.activity", name = "activity-ktx", version.ref = "activity-ktx" }
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
 
